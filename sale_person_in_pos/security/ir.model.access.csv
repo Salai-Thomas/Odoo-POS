@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_person_sales,sale.person access for Sales,model_sale_person,sales_team.group_sale_salesman,1,1,1,0
+access_sale_person_pos,sale.person access for POS,model_sale_person,point_of_sale.group_pos_user,1,1,1,0
