@@ -16,3 +16,7 @@ class InheritPosSession(models.Model):
                 'fields': ['name'],
             },
         }
+
+    def _get_pos_ui_sale_person(self, params):
+        return self.env['sale.person'].search_read(**params['search_params'])
+
