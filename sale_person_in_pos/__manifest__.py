@@ -21,6 +21,11 @@ Long description of module's purpose
         'views/inherit_res_partner.xml',
         'views/sale_person.xml',
     ],
+    'assets': {
+        'point_of_sale._assets_pos': [
+            'sale_person_in_pos/static/src/js/pos_store.js',
+        ],
+    },
 
 }
 
