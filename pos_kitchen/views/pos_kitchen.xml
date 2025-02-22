@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="pos_kitchen_root" name="POS Kitchen" sequence="4"/>
+    </data>
+</odoo>
