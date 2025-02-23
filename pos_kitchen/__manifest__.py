@@ -18,7 +18,7 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','pos_restaurant'],
+    'depends': ['base','point_of_sale','pos_restaurant'],
 
     # always loaded
     'data': [

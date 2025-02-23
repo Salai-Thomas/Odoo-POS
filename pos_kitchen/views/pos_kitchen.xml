@@ -1,7 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <data>
 
-        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
-        <menuitem id="pos_kitchen_root" name="POS Kitchen" sequence="4"/>
-    </data>
+        <record id="pos_kitchen_action" model="ir.actions.act_window">
+            <field name="name">Kitchen</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pos.kitchen</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="pos_kitchen_root" parent="point_of_sale.menu_point_root" name="POS Kitchen" sequence="9"/>
+
+        <menuitem id="pos_kitchen_menu_action"
+              name="Pos kitchen"
+              parent="pos_kitchen_root"
+              action="pos_kitchen_action"
+              sequence="10"/>
 </odoo>

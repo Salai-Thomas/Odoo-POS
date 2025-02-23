@@ -3,7 +3,9 @@
 from odoo import models, fields, api
 
 
-class pos_kitchen(models.Model):
-    _name = 'pos_kitchen'
+class PosKitchen(models.Model):
+    _name = 'pos.kitchen'
+
+    sequence= fields.Char("Sequence")
 
 
