@@ -22,14 +22,29 @@
             <field name="arch" type="xml">
                 <form string="pos_kitchen_form">
                     <sheet>
-                        <group>
-                            <field name="pos_config_id"/>
-                            <p class="text-primary">This will be the Allowed POS for this pos Kitchen</p>
-                        </group>
-                        <group>
-                            <field name="pos_category"/>
-                            <p class="text-primary">This will be the Allowed POS Category for this pos Kitchen</p>
-                        </group>
+                        <div class="o_settings-container row">
+                            <div id="pos_config_id" class="o_setting_box">
+                                <div class="o_setting_left_pane"></div>
+                                <div class="o_setting_right_pane">
+                                    <label for="pos_config_id"/>
+                                    <field name="pos_config_id"/>
+                                    <p class="text-primary">This will be the Allowed POS for this pos Kitchen</p>
+                                </div>
+
+                            </div>
+
+                            <div id="pos_category" class="o_setting_box">
+                                <div class="o_setting_left_pane"></div>
+                                <div class="o_setting_right_pane">
+                                    <label for="pos_category"/>
+                                    <field name="pos_category"/>
+                                    <p class="text-primary">This will be the Allowed POS Category for this pos Kitchen</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
                     </sheet>
                 </form>
             </field>
