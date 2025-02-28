@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
+        <record id="pos_kitchen_screen_action" model="ir.actions.client">
+            <field name="name">Kitchen Screen</field>
+            <field name="tag">pos_kitchen.KitchenScreen</field>
+        </record>
+
+        <!--Kitchen action-->
         <record id="pos_kitchen_action" model="ir.actions.act_window">
             <field name="name">Kitchen</field>
             <field name="type">ir.actions.act_window</field>
@@ -23,7 +29,7 @@
                 <form string="pos_kitchen_form">
                     <sheet>
                         <div class="o_settings-container row">
-                            <div id="pos_config_id" class="o_setting_box">
+                            <div id="pos_config_id" class="o_setting_box col-12 col-lg-6">
                                 <div class="o_setting_left_pane"></div>
                                 <div class="o_setting_right_pane">
                                     <label for="pos_config_id"/>
@@ -33,7 +39,7 @@
 
                             </div>
 
-                            <div id="pos_category" class="o_setting_box">
+                            <div id="pos_category" class="o_setting_box col-12 col-lg-6">
                                 <div class="o_setting_left_pane"></div>
                                 <div class="o_setting_right_pane">
                                     <label for="pos_category"/>
@@ -41,6 +47,26 @@
                                     <p class="text-primary">This will be the Allowed POS Category for this pos Kitchen</p>
                                 </div>
                             </div>
+                        <div class="col-12 col-lg-6 o_setting_box"
+                             id="kitchen_screen">
+                            <div class="o_setting_left_pane">
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <div class="text-muted">
+                                    <div>
+                                        <button name="%(pos_kitchen_screen_action)d"
+                                                type="action"
+                                                string="Kitchen Screen"
+                                                target="new"
+                                                class="btn-primary"
+                                                help="Got To the Kitchen Screen"/>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                    Click Here to See the kitchen Orders
+                                </div>
+                            </div>
+                        </div>
 
 
                         </div>
