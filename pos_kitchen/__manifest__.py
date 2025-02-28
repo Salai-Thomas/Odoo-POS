@@ -27,5 +27,12 @@ Long description of module's purpose
         'views/pos_kitchen.xml',
     ],
 
+    'assets': {
+        'web.assets_backend': [
+            'pos_kitchen/static/src/js/kitchen_screen.js',
+            'pos_kitchen/static/src/xml/kitchen_screen.xml',
+        ],
+    }
+
 }
 
