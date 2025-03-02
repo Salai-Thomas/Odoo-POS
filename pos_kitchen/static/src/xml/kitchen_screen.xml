@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
     <t t-name="pos_kitchen.kitchen_screen">
-        <div class="d-flex mt-4">
+            <div class="d-flex mt-4">
             <navbar class="container-fluid d-flex justify-content-between border align-items-center bg-light shadow" style="max-width:1000px;min-height:65px;">
                 <button class="px-3">
                     <h3>To Cook</h3>
@@ -18,6 +18,46 @@
                 <h3>Out</h3>
             </button>
         </div>
+
+        <!--Order Cards-->
+        <div class="row h-100 overflow-auto">
+            <div class="col-lg-4 col-md-6 col-12 mt-3">
+                <div class="card shadow">
+                    <div class="card-header d-flex justify-content-between">
+                        <h3>Cooking</h3>
+                        <h3>Table A</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <p>1x Product</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="num d-flex justify-content-between align-items-center mx-3">
+                                    <button class="btn btn-secondary">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="d-flex align-items-center mx-4">
+                                        <h3>5</h3>
+                                    </div>
+                                    <button class="btn btn-secondary">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+
+
+                                <button class="btn btn-danger">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-info">Ready</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
 
     </t>
 </templates>
