@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
     <t t-name="pos_kitchen.kitchen_screen">
-        Hello world
+        <div class="d-flex mt-4">
+            <navbar class="container-fluid d-flex justify-content-between border align-items-center bg-light shadow" style="max-width:1000px;min-height:65px;">
+                <button class="px-3">
+                    <h3>To Cook</h3>
+                </button>
+                <button class="px-3">
+                    <h3>Ready</h3>
+                </button>
+                <button class="px-3">
+                    <h3>Complete</h3>
+                </button>
+            </navbar>
+
+            <button class="me-3 px-4">
+                <h3>Out</h3>
+            </button>
+        </div>
+
     </t>
 </templates>
