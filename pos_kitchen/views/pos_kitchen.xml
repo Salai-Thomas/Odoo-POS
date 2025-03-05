@@ -55,11 +55,13 @@
                             <div class="o_setting_right_pane">
                                 <div class="text-muted">
                                     <div>
+                                        <field name="shop_number" invisible="1"/>
                                         <button name="%(pos_kitchen_screen_action)d"
                                                 type="action"
                                                 string="Kitchen Screen"
                                                 target="new"
                                                 class="btn-primary"
+                                                context="{'default_shop_id': shop_number}"
                                                 help="Got To the Kitchen Screen"/>
                                         <br/>
                                         <br/>

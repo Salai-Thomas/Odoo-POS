@@ -19,7 +19,7 @@ class PosKitchen(models.Model):
 
     pos_config_id = fields.Many2one("pos.config",domain=_pos_config_id,string="Allowed POS",help="Allowed POS For Kitchen")
     pos_category = fields.Many2one("pos.category",string="Allowed POS Category",help="Allowed POS Category For Kitchen")
-
+    shop_number = fields.Integer(related='pos_config_id.id',help="Id of the POS")
     @api.model
     def create(self, vals):
         """To Create sequence"""
