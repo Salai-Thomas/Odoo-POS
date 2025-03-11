@@ -9,8 +9,8 @@ patch(ActionpadWidget.prototype,{
         this.orm = useService("orm");
     },
     async submitOrder() {
-        console.log(this);
-        this.orm.call("pos.order","check_order_status",["",this.pos.selectedOrder.name])
+        const order_name= this.pos.selectedOrder.name;
+        await this.orm.call("pos.order","check_order_status",["",order_name]);
 
         if (!this.clicked) {
             this.clicked = true;
