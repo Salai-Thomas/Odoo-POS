@@ -5,5 +5,7 @@ class InheritPosOrders(models.Model):
 
     def check_order_status(self,order):
         if order:
-            print(order,'====================order')
-            print(type(order),"========================type of order")
+            pos_orders = self.env['pos.order'].search([("pos_reference","=",order)])
+            print(pos_orders,'======================pos_orders')
+
+
