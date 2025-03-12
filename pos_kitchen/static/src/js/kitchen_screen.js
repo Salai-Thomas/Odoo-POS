@@ -8,7 +8,7 @@ import { Component } from  "@odoo/owl";
 
     setup(){
         if(this.props.action.context){
-            console.log(this.props.acton.context);
+            console.log(this.props.action.context);
         }
     }
 
