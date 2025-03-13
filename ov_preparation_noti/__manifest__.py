@@ -17,6 +17,13 @@ Long description of module's purpose
         'views/templates.xml',
     ],
 
+    'assets': {
+        'pos_preparation_display.assets': [
+            'ov_preparation_noti/static/src/app/components/override/order/order.js'
+        ],
+
+    },
+
     'license': 'OEEL-1',
     'installable': True,
     'auto_install': False,
