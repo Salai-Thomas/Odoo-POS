@@ -13,8 +13,7 @@ Long description of module's purpose
     'version': '17.0.1.0.0',
     'depends': ['base','pos_preparation_display'],
     'data': [
-        'views/views.xml',
-        'views/templates.xml',
+        'views/pos_preparation_display.xml',
     ],
 
     'assets': {
