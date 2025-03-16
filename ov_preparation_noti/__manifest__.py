@@ -11,7 +11,7 @@ Long description of module's purpose
     'author': "odoo VERSE",
     'category': 'Point Of Sale',
     'version': '17.0.1.0.0',
-    'depends': ['base','pos_preparation_display'],
+    'depends': ['base','point_of_sale','pos_preparation_display'],
     'data': [
         'views/pos_preparation_display.xml',
     ],
