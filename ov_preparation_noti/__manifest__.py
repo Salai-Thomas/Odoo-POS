@@ -18,9 +18,11 @@ Long description of module's purpose
 
     'assets': {
         'pos_preparation_display.assets': [
-            'ov_preparation_noti/static/src/app/components/override/order/order.js'
+            'ov_preparation_noti/static/src/app/components/override/order/order.js',
         ],
-
+        'point_of_sale._assets_pos': [
+            'ov_preparation_noti/static/src/app/pos_bus.js',
+        ],
     },
 
     'license': 'OEEL-1',
